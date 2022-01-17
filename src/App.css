@@ -2,4 +2,5 @@ body{
   background: url(coffee-apple.jpg) no-repeat;
   background-attachment: fixed;
   width: 100%;
+  background-size: cover;
 }

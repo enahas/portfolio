@@ -7,7 +7,7 @@ export const projects = [
     {
         id: 2,
         img:"/assets/img/ecommerce.jpg",
-        link: "https://enahas.github.io/myFirstApp/"
+        link: "https://atr-ecommerce.netlify.app/"
     },
     {
         id: 3,
