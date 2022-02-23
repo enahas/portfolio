@@ -2,7 +2,7 @@ import React from 'react'
 import { makeStyles } from '@mui/styles';
 import './Project.css'
 
-function Project ({img, link, title}) {
+function Project ({img, link, title, description}) {
     const useStyles = makeStyles({
         project:{
             width: "30%",
@@ -29,11 +29,22 @@ function Project ({img, link, title}) {
 
         },
         imgProject:{
-            height: "40vh",
+            height: "30vh",
         },
         titleProject:{
             color: 'black'
-        }
+        },
+        textProject:{
+            color: 'black',
+            fontSize: '0.83em',
+            fontWeight: 'bold'
+        },
+        browser2:{
+            height: "42px",
+            backgroundColor: "rgb(243,242,242)",
+            display: "flex",
+            alignItems: "center"
+        },
       });
     
     const classes = useStyles();
@@ -49,6 +60,10 @@ function Project ({img, link, title}) {
         <a href={link} target="_blank" rel="noreferrer"> 
             <img src={img} alt="proyecto" className={classes.imgProject}/>
         </a>
+        <div className={classes.browser2}>
+            <p className={classes.textProject}>Tecnologías utilizadas: {description}</p>       
+        </div>
+        
       </div>
     )
 }

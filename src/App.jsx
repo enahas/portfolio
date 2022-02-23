@@ -100,10 +100,6 @@ function App() {
         <Header />
         <ProjectList />
       </div>
-
-
-
-
     </>
   );
 }
